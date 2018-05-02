@@ -1,0 +1,39 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+textarea {
+  resize: none;
+}
+
+.icon {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.form-control {
+  border: none;
+  outline: none;
+}
+
+.btn {
+  display: inline-block;
+  width: 80%;
+  text-align: center;
+  color: #FFF;
+  font-size: 14px;
+  line-height: 0.88rem;
+  background-color: #2BB9E6;
+  border-radius: 0.08rem;
+}
+
+.text-btn {
+  display: inline-block;
+  font-size: 18px;
+  color: #2BB9E6;
+  background-color: transparent;
+  text-decoration: none;
+  cursor: pointer;
+}
