@@ -1,0 +1,46 @@
+:host {
+  flex: 1;
+  overflow: auto;
+  display: flex;
+}
+
+.page {
+  flex: 1;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 0.2rem;
+  overflow: hidden;
+
+  & > .title {
+    background-color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    padding: 0.1rem 0.2rem;
+    margin-bottom: 0.15rem;
+
+    & > button.back {
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+
+      .icon-back {
+        margin-top: 0.03rem;
+      }
+    }
+
+    & > p {
+      margin-left: 0.3rem;
+    }
+  }
+
+  & > .content {
+    flex: 1;
+    background-color: #FFF;
+    padding: 0 0.15rem;
+    overflow: auto;
+    word-wrap: break-word;
+    word-break: normal;
+  }
+}

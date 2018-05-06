@@ -7,7 +7,6 @@ import { HeaderComponent } from './header/header.component'
 import { FooterComponent } from './footer/footer.component'
 import { SharedModule } from '../shared/shared.module'
 import { LayoutChildGuardService } from './layout-child-guard.service'
-import { MenuComponent } from './menu/menu.component'
 
 @NgModule({
     imports: [
@@ -18,7 +17,6 @@ import { MenuComponent } from './menu/menu.component'
     declarations: [
         LayoutComponent,
         HeaderComponent,
-        MenuComponent,
         FooterComponent
     ],
     providers: [

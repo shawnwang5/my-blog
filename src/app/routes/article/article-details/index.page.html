@@ -1,0 +1,7 @@
+<div class="page">
+  <header class="title">
+    <button class="back" (click)="back()"><i class="icon icon-back"></i>返回</button>
+    <p>{{ articleTitle }}</p>
+  </header>
+  <div class="content markdown-container" [innerHTML]="pageContent">{{ pageContent }}</div>
+</div>

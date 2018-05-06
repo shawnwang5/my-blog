@@ -1,7 +1,7 @@
-import { HttpUtils } from '../shared/util-plugins/http/http.utils'
+import { HttpUtils } from '../utils/http/http.utils'
 import {environment} from '../../environments/environment';
 
-export class DemoApi {
+export class ArticleApi {
     static getServerURL (path) {
         return environment.apiBaseURL + path
     }
@@ -10,7 +10,7 @@ export class DemoApi {
         return HttpUtils.post(url, params)
     }
 
-    static queryXXList () {
-        return DemoApi.post(DemoApi.getServerURL('queryXXList'), {})
+    static queryArticleList () {
+        return ArticleApi.post(ArticleApi.getServerURL('/articleList'), {})
     }
 }

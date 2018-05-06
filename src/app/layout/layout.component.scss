@@ -1,34 +1,31 @@
 .layout.app {
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  background-color: #f5f6f7;
 
   & > app-header {
-    flex: 0 0 80px;
-    display: flex;
+    background-color: #28323E;
+    width: 100%;
+    flex: 0 0 0.9rem;
+    line-height: 0.9rem;
   }
 
-  & > .app-content {
-    display: flex;
+  & > .page-container {
+    width: 1200px;
+    margin: 0 auto;
     flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+}
 
-    & > app-menu {
-      flex: 0 0 200px;
-      display: flex;
-    }
-
+@media screen and (max-width: 1200px) {
+  .layout.app {
     & > .page-container {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      overflow: auto;
-
-      & > .page-wrapper {
-        flex: 1;
-        padding: 10px 20px;
-        position: relative;
-        display: flex;
-      }
+      width: 100%;
     }
   }
 }

@@ -3,10 +3,12 @@ import { CommonModule } from '@angular/common'
 import { RouterModule, Routes } from '@angular/router'
 
 import { SharedModule } from '../../shared/shared.module'
-import { HomePageComponent } from './home/index.page'
+import { ArticleListPageComponent } from './article-list/index.page'
+import { ArticleDetailsPageComponent } from './article-details/index.page'
 
 const routes: Routes = [
-    { path: '', component: HomePageComponent }
+    { path: 'list', component: ArticleListPageComponent },
+    { path: 'details/:articleId', component: ArticleDetailsPageComponent },
 ]
 
 @NgModule({
@@ -16,11 +18,12 @@ const routes: Routes = [
         CommonModule
     ],
     declarations: [
-        HomePageComponent
+      ArticleDetailsPageComponent,
+      ArticleListPageComponent
     ],
     exports: [
         RouterModule
     ]
 })
-export class HomeModule {
+export class ArticleModule {
 }

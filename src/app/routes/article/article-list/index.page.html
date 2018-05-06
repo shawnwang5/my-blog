@@ -1,0 +1,43 @@
+<div class="page">
+  <aside class="navigator-panel top">
+    <div class="article-overview">
+      <p>文章分类</p>
+      <p><span>总数</span><span>2</span></p>
+    </div>
+    <ul class="categories">
+      <li>
+        <a routerLink="">工具相关</a>
+      </li>
+      <li>
+        <a routerLink="">开发相关</a>
+      </li>
+    </ul>
+  </aside>
+  <div class="content">
+    <div class="list-group article-list">
+      <div class="list-item" *ngFor="let item of articleList" (click)="onArticleItemClick(item)">
+        <p>{{ item.title }}</p>
+        <p>{{ item.summary }}</p>
+        <p>
+          <span>创建时间<em>{{ item.createDate }}</em></span>
+          <span>阅读数<em>{{ item.readNumber }}</em></span>
+          <span>评论数<em>{{ item.commentNumber }}</em></span>
+        </p>
+      </div>
+    </div>
+  </div>
+  <aside class="navigator-panel right">
+    <div class="article-overview">
+      <p>文章分类</p>
+      <p><span>总数</span><span>2</span></p>
+    </div>
+    <ul class="categories">
+      <li>
+        <a routerLink="">工具相关</a>
+      </li>
+      <li>
+        <a routerLink="">开发相关</a>
+      </li>
+    </ul>
+  </aside>
+</div>

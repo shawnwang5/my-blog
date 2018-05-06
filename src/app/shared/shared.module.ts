@@ -3,8 +3,7 @@ import { CommonModule } from '@angular/common'
 import { RouterModule } from '@angular/router'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { HttpClientModule } from '@angular/common/http'
-import { UIPluginsModule } from './ui-plugins/index.module'
-import { UtilPluginsModule } from './util-plugins/index.module'
+import { UIPluginsModule } from './components/index.module'
 import { ClickOutsideModule } from 'ng-click-outside'
 
 @NgModule({
@@ -16,7 +15,6 @@ import { ClickOutsideModule } from 'ng-click-outside'
         ClickOutsideModule,
         HttpClientModule,
         UIPluginsModule,
-        UtilPluginsModule
     ],
     declarations: [],
     exports: [
@@ -25,7 +23,6 @@ import { ClickOutsideModule } from 'ng-click-outside'
         ReactiveFormsModule,
         ClickOutsideModule,
         UIPluginsModule,
-        UtilPluginsModule
     ]
 })
 export class SharedModule {
